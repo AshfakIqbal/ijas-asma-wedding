@@ -1,0 +1,210 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#ffffff">
+  <meta name="description" content="Wedding invitation of Ijas Nazeer and Asma Hassan — Sunday, 23 August 2026 at Eden Park, Gampola.">
+  <title>Ijas & Asma | Wedding Invitation</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Great+Vibes&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="invitation-locked">
+
+  <div class="gift-opener" id="giftOpener" role="dialog" aria-modal="true" aria-labelledby="giftTitle">
+    <div class="opener-background" aria-hidden="true">
+      <span class="opener-flower flower-one"></span>
+      <span class="opener-flower flower-two"></span>
+      <span class="opener-flower flower-three"></span>
+      <span class="opener-leaf leaf-one"></span>
+      <span class="opener-leaf leaf-two"></span>
+      <span class="opener-leaf leaf-three"></span>
+    </div>
+
+    <div class="envelope-wrap">
+      <p class="opener-kicker">You are warmly invited</p>
+
+      <button class="envelope-button" id="unwrapButton" type="button" aria-label="Open the wedding invitation">
+        <span class="envelope">
+          <span class="envelope-back"></span>
+          <span class="envelope-letter">
+            <span class="letter-monogram">I <small>&amp;</small> A</span>
+            <span class="letter-line"></span>
+            <span class="letter-title" id="giftTitle">Wedding Invitation</span>
+          </span>
+          <span class="envelope-left"></span>
+          <span class="envelope-right"></span>
+          <span class="envelope-bottom"></span>
+          <span class="envelope-flap"></span>
+          <span class="wax-seal">
+            <span>I</span><small>&amp;</small><span>A</span>
+          </span>
+        </span>
+
+        <span class="open-text">Tap to Open</span>
+        <span class="open-subtext">Music begins when the invitation opens</span>
+      </button>
+    </div>
+  </div>
+
+  <div class="petal-scene" id="petalScene" aria-hidden="true"></div>
+
+  <button class="music-control" id="musicControl" type="button" aria-label="Mute background music" aria-pressed="false">
+    <span class="music-icon" aria-hidden="true">♫</span>
+    <span class="music-label" id="musicLabel">Music On</span>
+  </button>
+
+  <audio id="backgroundMusic" loop preload="auto" playsinline>
+    <source src="assets/wedding-ambient.wav" type="audio/wav">
+  </audio>
+
+  <main>
+    <section class="invitation-section" aria-label="Wedding invitation">
+      <div class="gold-glow gold-glow-one" aria-hidden="true"></div>
+      <div class="gold-glow gold-glow-two" aria-hidden="true"></div>
+
+      <div class="invitation-wrap reveal">
+        <img
+          class="invitation-card"
+          src="assets/wedding-invitation.png"
+          alt="Invitation to the wedding of Ijas Nazeer and Asma Hassan on Sunday 23 August 2026 at 12.30 PM, Eden Park, Gampola."
+        >
+      </div>
+
+      <p class="scroll-note reveal">Scroll to count down with us</p>
+      <span class="scroll-arrow" aria-hidden="true">⌄</span>
+    </section>
+
+    <section class="countdown-section" aria-labelledby="countdownTitle">
+      <div class="section-content reveal">
+        <p class="script-title">Until we say “I do”</p>
+        <h1 id="countdownTitle">Our Wedding Countdown</h1>
+        <div class="gold-divider" aria-hidden="true"><span>❦</span></div>
+
+        <div class="countdown" id="countdown" role="timer" aria-live="polite">
+          <div class="countdown-unit">
+            <strong id="days">000</strong>
+            <span>Days</span>
+          </div>
+          <div class="countdown-separator" aria-hidden="true">:</div>
+          <div class="countdown-unit">
+            <strong id="hours">00</strong>
+            <span>Hours</span>
+          </div>
+          <div class="countdown-separator" aria-hidden="true">:</div>
+          <div class="countdown-unit">
+            <strong id="minutes">00</strong>
+            <span>Minutes</span>
+          </div>
+          <div class="countdown-separator" aria-hidden="true">:</div>
+          <div class="countdown-unit">
+            <strong id="seconds">00</strong>
+            <span>Seconds</span>
+          </div>
+        </div>
+
+        <p class="countdown-message" id="countdownMessage"></p>
+
+        <div class="event-details">
+          <article>
+            <span class="detail-icon" aria-hidden="true">◇</span>
+            <p>Date</p>
+            <strong>Sunday, 23 August 2026</strong>
+          </article>
+          <article>
+            <span class="detail-icon" aria-hidden="true">◷</span>
+            <p>Time</p>
+            <strong>12.30 PM Onwards</strong>
+          </article>
+          <article>
+            <span class="detail-icon" aria-hidden="true">⌖</span>
+            <p>Venue</p>
+            <strong>Eden Park, Gampola</strong>
+          </article>
+        </div>
+
+        <div class="action-row">
+          <a class="action-button primary-action"
+             href="https://www.google.com/maps/search/?api=1&query=Eden+Park+93%2FA%2F1+Nuwara+Eliya+Road+Gampola+Sri+Lanka"
+             target="_blank" rel="noopener">
+            Get Directions
+          </a>
+          <button class="action-button secondary-action" id="calendarButton" type="button">
+            Add to Calendar
+          </button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="business-footer" aria-label="Wedding services by Inkspire Prints and Dimension">
+    <div class="footer-intro reveal">
+      <p class="footer-kicker">Make your celebration unforgettable</p>
+      <h2>Wedding Services by Inkspire Prints & Dimension</h2>
+      <p>Design, printing, photography, keepsakes and live invitation experiences — all from one trusted team.</p>
+    </div>
+
+    <div class="brand-grid">
+      <section class="brand-panel inkspire-panel reveal">
+        <img class="inkspire-logo" src="assets/inkspire-white.png" alt="Inkspire Prints">
+        <p class="brand-tagline">Creative wedding print & digital services</p>
+
+        <div class="service-pills">
+          <span>Wedding Invitation Printing</span>
+          <span>Live Invitation Websites</span>
+          <span>Wedding Albums</span>
+          <span>Wedding Photoshoots</span>
+          <span>Wedding Photo Prints</span>
+        </div>
+      </section>
+
+      <section class="brand-panel dimension-panel reveal">
+        <div class="dimension-logo-shell">
+          <img class="dimension-logo" src="assets/dimension-primary-transparent.png" alt="Dimension — powered by Inkspire Prints">
+        </div>
+        <p class="brand-tagline">Frames & personalised display gifts</p>
+
+        <div class="service-pills">
+          <span>Nikah / Nika Frames</span>
+          <span>Money Frames</span>
+          <span>Photo Frames</span>
+          <span>Personalised Posters</span>
+        </div>
+      </section>
+    </div>
+
+    <div class="contact-strip reveal">
+      <a href="tel:+94702949758" aria-label="Call Inkspire Prints">
+        <span>Call / WhatsApp</span>
+        <strong>+94 70 29 49 758</strong>
+      </a>
+
+      <a href="https://www.google.com/maps/search/?api=1&query=10%2F3+Kandy+Road+Gelioya+20620"
+         target="_blank" rel="noopener" aria-label="Open Inkspire Prints location in Google Maps">
+        <span>Visit Us</span>
+        <strong>10/3 Kandy Road, Gelioya 20620</strong>
+      </a>
+
+      <a class="whatsapp-cta"
+         href="https://wa.me/94702949758?text=Hello%20Inkspire%20Prints%2C%20I%20am%20interested%20in%20your%20wedding%20services."
+         target="_blank" rel="noopener">
+        Enquire on WhatsApp
+      </a>
+    </div>
+
+    <div class="footer-bottom">
+      <p>Ijas <span>&</span> Asma · 23 August 2026</p>
+      <p>Invitation website crafted by Inkspire Prints</p>
+    </div>
+  </footer>
+
+  <noscript>
+    <div class="noscript-message">Please enable JavaScript to view the live countdown and floating petals.</div>
+  </noscript>
+
+  <script src="script.js"></script>
+</body>
+</html>
