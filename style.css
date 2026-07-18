@@ -20,10 +20,12 @@
 html {
   scroll-behavior: smooth;
   background: var(--ivory);
+  overflow-x: hidden;
 }
 
 body {
   margin: 0;
+  min-width: 320px;
   overflow-x: hidden;
   background:
     radial-gradient(circle at 50% 4%, rgba(229, 185, 93, 0.10), transparent 29rem),
@@ -163,11 +165,13 @@ img {
 /* Invitation */
 .invitation-section {
   position: relative;
+  min-height: 100vh;
   min-height: 100svh;
   padding: clamp(30px, 5vw, 72px) 18px 38px;
   display: grid;
   place-items: center;
   isolation: isolate;
+  overflow: hidden;
 }
 
 .gold-glow {
@@ -757,6 +761,15 @@ img {
     flex-direction: column;
     justify-content: center;
   }
+
+  .action-row {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .action-button {
+    width: 100%;
+  }
 }
 
 @media (max-width: 390px) {
@@ -801,11 +814,11 @@ img {
   }
 }
 
-
 /* ============================================================
    CLEAN ENVELOPE OPENER
    ============================================================ */
 body.invitation-locked {
+  height: 100vh;
   height: 100svh;
   overflow: hidden;
 }
